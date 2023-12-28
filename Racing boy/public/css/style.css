@@ -1,0 +1,125 @@
+.street{
+    background-image: url("../images/street.jpg");
+    background-size: auto;
+    height: 360px;
+}
+.box3{
+    width: 169px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(12, 139, 76);
+    color: rgb(171, 205, 206);
+    border-radius: 5px;
+}
+.box4{
+    width: 169px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(87, 189, 56);
+    color: rgb(201, 216, 216);
+    border-radius: 5px;
+}
+.box2{
+width: 180px;
+display: flex;
+align-items: center;
+background-color: rgb(0, 0, 0);
+padding: 10px;
+border-radius: 20px;
+position: relative;
+}
+img{
+    padding: 15px;
+}
+.btn{
+    width: 200px;
+    margin: auto;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(24, 165, 99)
+    border-radius 5px;
+}
+.car_1{
+    left: 100px;
+}
+.end{
+    width: 20px;
+    height: 100%;
+    background: yellow;
+    float: right;
+    margin-top: -372px;
+    margin-right: 48px;
+}
+.traffic_light{
+    display: flex;
+}
+#red{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    /* background: rgb(255, 170, 170); */
+    z-index: 2;
+    margin: 5px;
+    border: 3px solid black;
+}
+#yellow{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    /* background: rgb(255, 255, 180); */
+    margin: 5px;
+    z-index: 2;
+    border: 3px solid black;
+}
+#green{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    /* background: rgb(177, 255, 177); */
+    margin: 5px;
+    z-index: 2;
+    border: 3px solid rgb(0, 0, 0);
+}
+#xang1{
+    width: 100px;
+    background: yellow;
+    height: 10px;
+    border-radius: 5px;
+    
+}
+#xang2{
+    width: 100px;
+    background: red;
+    height: 10px;
+    border-radius: 5px;
+}
+.car_runing{
+    animation: shake 1.80s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(0,-1px, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(0, 1px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(0, -1px,0);
+    }
+
+    40%, 60% {
+        transform: translate3d(0, 1px, 0);
+    }
+}
